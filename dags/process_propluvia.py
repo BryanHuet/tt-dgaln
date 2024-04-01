@@ -1,6 +1,6 @@
 import datetime
 
-from RetreiveAndLoadOperator import RetreiveAndLoadOperator
+from RetrieveAndLoadOperator import RetrieveAndLoadOperator
 from airflow.decorators import dag
 from airflow.providers.common.sql.operators.sql import SQLExecuteQueryOperator
 
@@ -24,14 +24,14 @@ def ProcessPropluvia():
         sql="sql/arretes.sql"
     )
 
-    get_and_load_zones = RetreiveAndLoadOperator(
+    get_and_load_zones = RetrieveAndLoadOperator(
         task_id="get_and_load_zones",
         data_url="https://www.data.gouv.fr/fr/datasets/r/ac45ed59-7f4b-453a-9b3d-3124af470056",
         connection_id="conn_id",
         table_name="zones"
     )
 
-    get_and_load_arretes = RetreiveAndLoadOperator(
+    get_and_load_arretes = RetrieveAndLoadOperator(
         task_id="get_and_load_arretes",
         data_url="https://www.data.gouv.fr/fr/datasets/r/782aac32-29c8-4b66-b231-ab4c3005f574",
         connection_id="conn_id",

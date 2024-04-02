@@ -1,10 +1,10 @@
 # tt-dgaln
-Data Engineer technical test with the objectif of providing an environment with
+Data Engineer technical test aiming to provide an environment with
 a data flow from data collection to analysis using a visualization tool.
 
 ## Execution
 docker compose up
- - In some case, you have to set rigths to execute the superset init file:
+ - In some case, you have to set rights to execute the superset init file:
  - chmod u+x docker/superset-ini.sh
 
 ## Airflow
@@ -22,7 +22,7 @@ docker compose up
 
 ## Adminer
  - [localhost:9090](http://localhost:9090)
- - Systeme: PostgreSQL
- - Serveur: postgres
- - Utilisateur: airflow
- - Mot de passe: airflow
+ - System: PostgreSQL
+ - Server: postgres
+ - Username: airflow
+ - Password: airflow

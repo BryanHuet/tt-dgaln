@@ -27,9 +27,7 @@ class RetrieveAndLoadOperator(BaseOperator):
         super().__init__(**kwargs)
         self.data_url = data_url
         self.connection_id = connection_id
-        self.table_name = table_name
-
-        
+        self.table_name = table_name 
 
     def check_table_existence(self, hook) -> None:
         conn = hook.get_conn()

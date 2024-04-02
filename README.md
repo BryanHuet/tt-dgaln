@@ -8,20 +8,20 @@ docker compose up
  - chmod u+x docker/superset-ini.sh
 
 ## Airflow
- - [localhost](http://localhost:8080)
+ - [localhost:8080](http://localhost:8080)
  - username: airflow
  - password: airflow
 
 
 
 ## Superset
- - [localhost](http://localhost:8088)
+ - [localhost:8088](http://localhost:8088)
  - username: admin
  - password: admin
 
 
 ## Adminer
- - [localhost](http://localhost:9090)
+ - [localhost:9090](http://localhost:9090)
  - Systeme: PostgreSQL
  - Serveur: postgres
  - Utilisateur: airflow

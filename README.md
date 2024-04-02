@@ -3,9 +3,9 @@ Data Engineer technical test aiming to provide an environment with
 a data flow from data collection to analysis using a visualization tool.
 
 ## Execution
-docker compose up
+$ docker compose up
  - In some case, you have to set rights to execute the superset init file:
- - chmod u+x docker/superset-ini.sh
+ - $ chmod u+x docker/superset-ini.sh
 
 ## Airflow
  - [localhost:8080](http://localhost:8080)
